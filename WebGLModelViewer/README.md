@@ -1,5 +1,11 @@
 <h1> WebGl Model Viewer </h1>
-
+A basic model viewer made from scratch with WebGL and JavaScript. User can
+<ul>
+  <li>Translate and rotate the camera along all 3 axes</li>
+  <li>Select models to translate and rotate along all 3 axes, as well as edit ambient, diffuse, specular lighting values</li>
+  <li>Toggle shader processing on/off</li>
+</ul>
+Run the model viewer by downloading the "Main" folder and running index.html.
 <h2>Controls</h2>
 <h3>Camera Controls</h3>
 <h4>Camera Movement</h4>
