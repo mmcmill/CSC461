@@ -1,8 +1,6 @@
 /* GLOBAL CONSTANTS AND VARIABLES */
-
-/* assignment specific globals */
-const TEXTURES_URL_START = "https://ncsucgclass.github.io/prog4/";
-const INPUT_TRIANGLES_URL = "https://ncsucgclass.github.io/prog3/triangles2.json"; // triangles file loc
+const TEXTURES_URL_START = "https://raw.githubusercontent.com/mmcmill/CSC461/master/WebGLModelViewer/Textures/"; // textures path URL
+const INPUT_TRIANGLES_URL = "https://raw.githubusercontent.com/mmcmill/CSC461/master/WebGLModelViewer/Models/triangles.json"; // triangles file loc
 var defaultEye = vec3.fromValues(0.5,0.5,-0.5); // default eye position in world space
 var defaultCenter = vec3.fromValues(0.5,0.5,0.5); // default view direction in world space
 var defaultUp = vec3.fromValues(0,1,0); // default view up vector
@@ -13,6 +11,7 @@ var lightPosition = vec3.fromValues(0.5,0.5,-0.5); // default light position
 var rotateTheta = Math.PI/50; // how much to rotate models by with each key press
 var Blinn_Phong = true;
 var Light_Map = true;
+
 /* webgl and geometry data */
 var gl = null; // the all powerful gl object. It's all here folks!
 var inputTriangles = []; // the triangle data as loaded from input files
@@ -43,12 +42,12 @@ var Blinn_PhongULoc;
 var toggleLightMapULoc;
 var textureULoc;
 var lightMapULoc;
+
 /* interaction variables */
 var Eye = vec3.clone(defaultEye); // eye position in world space
 var Center = vec3.clone(defaultCenter); // view direction in world space
 var Up = vec3.clone(defaultUp); // view up vector in world space
 var isPerspectiveProjection = true;
-// ASSIGNMENT HELPER FUNCTIONS
 
 // get the JSON file from the passed URL
 function getJSONFile(url,descr) {
@@ -297,7 +296,7 @@ function setupWebGL() {
       imageContext = imageCanvas.getContext("2d"); 
       var bkgdImage = new Image(); 
       bkgdImage.crossOrigin = "Anonymous";
-      bkgdImage.src = "https://ncsucgclass.github.io/prog4/sky.jpg";
+      bkgdImage.src = TEXTURES_URL_START + "sky.jpg";
       bkgdImage.onload = function(){
           var iw = bkgdImage.width, ih = bkgdImage.height;
           imageContext.drawImage(bkgdImage,0,0,iw,ih,0,0,cw,ch);   
