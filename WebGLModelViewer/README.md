@@ -6,6 +6,8 @@ A basic model viewer made from scratch with WebGL and JavaScript. User can
   <li>Toggle shader processing on/off</li>
 </ul>
 
+Run the model viewer by downloading the "Main" folder and running index.html.
+
 <h2>Controls</h2>
 <h3>Camera Controls</h3>
 <h4>Camera Movement</h4>
