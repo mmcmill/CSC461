@@ -1,27 +1,33 @@
 <h1> WebGl Model Viewer </h1>
+A basic model viewer made from scratch with WebGL and JavaScript. User can 
+<ul> 
+  <li>Translate and rotate the camera along all 3 axes</li>
+  <li>Select models to translate and rotate along all 3 axes, as well as edit ambient, diffuse, specular lighting values</li>
+  <li>Toggle shader processing on/off</li>
+</ul>
 
 <h2>Controls</h2>
 <h3>Camera Controls</h3>
 <h4>Camera Movement</h4>
 <ul>
-  <li>w - translate forward</li>
-  <li>s - translate backward</li>
-  <li>a - translate left</li>
-  <li>d - translate right</li>
-  <li>q - translate upward</li>
-  <li>e - translate downward</li>
-  <li>W - rotate downward</li>
-  <li>S - rotate upward</li>
-  <li>A - rotate left</li>
-  <li>D - rotate right</li>
-  <li>Q - rotate counterclockwise</li>
-  <li>E - rotate clockwise</li>
-  <li>Escape - reset view</li>
+  <li>w - Translate forward</li>
+  <li>s - Translate backward</li>
+  <li>a - Translate left</li>
+  <li>d - Translate right</li>
+  <li>q - Translate upward</li>
+  <li>e - Translate downward</li>
+  <li>W - Rotate downward</li>
+  <li>S - Rotate upward</li>
+  <li>A - Rotate left</li>
+  <li>D - Rotate right</li>
+  <li>Q - Rotate counterclockwise</li>
+  <li>E - Rotate clockwise</li>
+  <li>Escape - Reset view</li>
 </ul>
 <h4>Camera Settings</h4>
 <ul>
-  <li>, - toggle perspective On</li>
-  <li>= - toggle perspective Off</li>
+  <li>, - Toggle perspective on</li>
+  <li>= - Toggle perspective off</li>
   <li>b - Blinn-Phong on, Light map on</li>
   <li>m - Blinn-Phong off, Light map on</li>
   <li>u - Blinn-Phong and Light Map off</li>
@@ -38,26 +44,26 @@
 <h4>Model Movement</h4>
 While a model is selected,
 <ul>
-  <li>k - translate left</li>
-  <li>; - translate right</li>
-  <li>l - translate back</li>
-  <li>o - translate forward</li>
-  <li>i - translate up</li>
-  <li>p - translate down</li>
-  <li>K - rotate left</li>
-  <li>: - rotate right</li>
-  <li>L - rotate up</li>
-  <li>O - rotate down</li>
-  <li>I - rotate counterclockwise</li>
-  <li>P - rotate clockwise</li>
-  <li>Backspace - reset model position</li>
+  <li>k - Translate left</li>
+  <li>; - Translate right</li>
+  <li>l - Translate back</li>
+  <li>o - Translate forward</li>
+  <li>i - Translate up</li>
+  <li>p - Translate down</li>
+  <li>K - Rotate left</li>
+  <li>: - Rotate right</li>
+  <li>L - Rotate up</li>
+  <li>O - Rotate down</li>
+  <li>I - Rotate counterclockwise</li>
+  <li>P - Rotate clockwise</li>
+  <li>Backspace - Reset model position</li>
 </ul>
 
 <h4>Model Settings</h4>
 While a model is selected,
 <ul>
-  <li>n - adjust luminosity</li>
-  <li>numpad1 - adjust model's ambient lighting</li>
-  <li>numpad2 - adjust model's diffuse lighting</li>
-  <li>numpad3 - adjust model's specular lighting</li>
+  <li>n - Adjust luminosity</li>
+  <li>numpad1 - Adjust model's ambient lighting</li>
+  <li>numpad2 - Adjust model's diffuse lighting</li>
+  <li>numpad3 - Adjust model's specular lighting</li>
 </ul>  
